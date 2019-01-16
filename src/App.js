@@ -53,7 +53,7 @@ class App extends Component {
             ADD
           </button>
         </form>
-        <Flipper flipKey={this.state.listItems.join("")}>
+        <Flipper spring="wobbly" flipKey={this.state.listItems.join("")}>
           <ul className="list">
             {this.state.listItems.map((item, index) => (
               <Item
